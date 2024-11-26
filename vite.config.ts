@@ -15,6 +15,7 @@ export default defineConfig({
       input: {
         index: "index.html",
         "polyfill/": "polyfill/index.html",
+        "fetch/": "fetch/index.html",
       },
     },
   },
