@@ -10,4 +10,12 @@ export default defineConfig({
       targets: ["chrome >= 30"],
     }),
   ],
+  build: {
+    rollupOptions: {
+      input: {
+        index: "index.html",
+        page1: "src/page1/index.html",
+      },
+    },
+  },
 });
