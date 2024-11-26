@@ -8,6 +8,7 @@ export default defineConfig({
     react(),
     legacy({
       targets: ["chrome >= 30"],
+      additionalLegacyPolyfills: ["whatwg-fetch"],
     }),
   ],
   build: {
