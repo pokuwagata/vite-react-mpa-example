@@ -1,7 +1,10 @@
-import { createRoot } from "react-dom/client";
+export function Page1() {
+  const structuredCloneTest = structuredClone({ a: 1, b: 2, c: 3 });
 
-createRoot(document.getElementById("root")!).render(
-  <div>
-    <h1>Page 1</h1>
-  </div>
-);
+  return (
+    <div>
+      <h1>Page 1</h1>
+      <p>{JSON.stringify(structuredCloneTest)}</p>
+    </div>
+  );
+}
